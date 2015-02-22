@@ -1,6 +1,6 @@
 var feed = new Instafeed({
 	get: 'user',
     userId: 227012267,
-    accessToken: 'ee2c8fb2d5c24eab9054652cd7794526'
+    accessToken: '283823831.ee2c8fb.d8276e2ea678489f9a2d283b720dc64a'
  });
 feed.run();
