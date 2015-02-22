@@ -1,6 +1,7 @@
-//TODO filter the data so that it can be displayed
-// var tumblrRestBlogRequest = "http://api.tumblr.com/v2/blog/aueque.tumblr.com/posts?api_key=2vGFErqOzbNAiZwljkUDd0fu3ywY2fqt7dPXaKuA9i5OjUduA6";
-
+//All information is stored within tumblr_api_read
 console.log(tumblr_api_read);
 
-document.write('<a href="' + tumblr_api_read['posts'][0]['url'] + '">Most Recent Tumblr Post</a>');
+//All the post information is stored within the posts portion of the object iterated thru and displayed below
+for (var i=0;i<tumblr_api_read.posts.length;i++) {
+	document.write('<a href="' + tumblr_api_read.posts[i].url + '">tumblr_api_read.posts[i].date</a>');
+}
