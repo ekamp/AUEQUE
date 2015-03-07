@@ -1,7 +1,11 @@
+//Iconbar navigation items
 var iconNavigationBar, homeNavigationItem ,twitterNavigationItem ,instagramNavigationItem ,aboutNavigationItem;
 
+//Div content
+var homeDiv, twitterDiv, instagramDiv, aboutDiv;
+
 window.onload = function(){
-	//Bind the objects
+	//Bind the iconbar objects
 	iconNavigationBar = document.getElementById("iconNavigationBar");
 	homeNavigationItem = document.getElementById("homeNavItem");
 	twitterNavigationItem = document.getElementById("twitterNavItem");
@@ -12,7 +16,13 @@ window.onload = function(){
 	homeNavigationItem.addEventListener("click",homeIconClicked,false);
 	twitterNavigationItem.addEventListener("click",twitterIconClicked,false);
 	instagramNavigationItem.addEventListener("click",instagramIconClicked,false);
-	aboutNavigationItem.addEventListener("click",aboutIconClicked,false);	
+	aboutNavigationItem.addEventListener("click",aboutIconClicked,false);
+
+	//Bind the div content
+	homeDiv =  document.getElementById("home");
+	twitterDiv = document.getElementById("tweetList");
+	instagramDiv = document.getElementById("instafeed");
+	aboutDiv = document.getElementById("tumblrFeed");
 }
 
 /** OnClick functions **/
@@ -27,6 +37,13 @@ function twitterIconClicked(){
 	clearItemNavigationFormatting();
 	iconNavigationBar.className = "icon-bar four-up icon-bar-twitter";
 	twitterNavigationItem.className = "item active";
+
+	homeDiv.className = "hidden";
+	twitterDiv.className="visible";
+	instagramDiv.className = "hidden";
+	aboutDiv.className = "hidden";
+	
+	fetchTweets();
 }
 
 function instagramIconClicked(){

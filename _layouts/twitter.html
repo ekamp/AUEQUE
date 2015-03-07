@@ -6,11 +6,18 @@
 <body>
 	{% include navbar.html %}
 </body>
-
-<h2>Latest tweets by @Aueque</h2>
-<div id="tweetList"></div>
-<div id="instafeed"></div>
-<div id="tumblrFeed"></div>
+<div id="home">
+	<h2>Home Page</h2>
+</div>
+<div id="tweetList" class="hidden">
+	<h2>Twitter</h2>
+</div>
+<div id="instafeed" class="hidden">
+	<h2>Instagram</h2>
+</div>
+<div id="tumblrFeed" class="hidden">
+	<h2>About</h2>
+</div>
 <br/>
 <br/>
 <br/>
@@ -18,10 +25,10 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/foundation.min.js"></script>
 <script src="js/aueque.js"></script>
-<!-- <script src="js/TwitterPostFetcherMin.js"></script>
+<script src="js/TwitterPostFetcherMin.js"></script>
 <script src="js/instafeed.min.js"></script>
 <script src="http://aueque.tumblr.com/api/read/json"></script>
 <script src="js/auequeTwitter.js"></script>
 <script src="js/auequeInstagram.js"></script>
-<script src="js/auequeTumblr.js"></script> -->
+<script src="js/auequeTumblr.js"></script>
 </HTML>

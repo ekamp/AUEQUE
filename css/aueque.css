@@ -32,3 +32,12 @@
 .icon-bar-instagram > a:hover {
 	background: #FFFFFF; }
 
+/** Div properties **/
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
