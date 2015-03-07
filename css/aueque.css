@@ -6,6 +6,12 @@
 	background: #8C88A0 !important;
 }
 
+.icon-bar-blog-about > a.active {
+    background: #B6B4C5; }
+
+.icon-bar-blog-about > a:hover {
+	background: #B6B4C5; }
+
 .icon-bar-twitter{
 	background: #0080AE !important;
 }

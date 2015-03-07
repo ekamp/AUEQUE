@@ -16,11 +16,10 @@ window.onload = function(){
 /** OnClick functions **/
 
 function homeIconClicked(){
-	iconNavigationBar.className = "icon-bar five-up icon-bar-blog-about";
+	iconNavigationBar.className = "icon-bar four-up icon-bar-blog-about";
 }
 
 function twitterIconClicked(){
-	alert("clicking twitter icon");
 	iconNavigationBar.className = "icon-bar four-up icon-bar-twitter";
 }
 
