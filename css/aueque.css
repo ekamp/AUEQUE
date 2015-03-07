@@ -16,8 +16,19 @@
 	background: #0080AE !important;
 }
 
-.icon-bar-instagram{
+.icon-bar-twitter > a.active {
+    background: #FFFFFF; }
+
+.icon-bar-twitter > a:hover {
+	background: #FFFFFF; }
+
+.icon-bar-instagram {
 	background: #125688 !important;
-	/*background: #549BDE;*/
 }
+
+.icon-bar-instagram > a.active {
+    background: #FFFFFF; }
+
+.icon-bar-instagram > a:hover {
+	background: #FFFFFF; }
 
