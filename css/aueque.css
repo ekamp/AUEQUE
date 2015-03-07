@@ -3,15 +3,15 @@
 	Icon Bar Color Properties
 */
 .icon-bar-blog-about{
-	background: #8C88A0;
+	background: #8C88A0 !important;
 }
 
 .icon-bar-twitter{
-	background: #b6b4c5;
+	background: #0080AE !important;
 }
 
 .icon-bar-instagram{
-	background: #125688;
+	background: #125688 !important;
 	/*background: #549BDE;*/
 }
 
