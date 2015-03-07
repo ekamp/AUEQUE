@@ -17,16 +17,20 @@ window.onload = function(){
 
 function homeIconClicked(){
 	iconNavigationBar.className = "icon-bar four-up icon-bar-blog-about";
+	homeNavigationItem.className = "item active";
 }
 
 function twitterIconClicked(){
 	iconNavigationBar.className = "icon-bar four-up icon-bar-twitter";
+	twitterNavigationItem.className = "item active";
 }
 
 function instagramIconClicked(){
 	iconNavigationBar.className = "icon-bar four-up icon-bar-instagram";
+	instagramNavigationItem.className = "item active";
 }
 
 function aboutIconClicked(){
 	iconNavigationBar.className = "icon-bar four-up icon-bar-blog-about";
+	aboutNavigationItem.className = "item active";
 }
