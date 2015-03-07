@@ -1,5 +1,17 @@
-<style>
+
+/*
+	Icon Bar Color Properties
+*/
 .icon-bar-blog-about{
+	background: #8C88A0;
+}
+
+.icon-bar-twitter{
 	background: #b6b4c5;
 }
-</style>
+
+.icon-bar-instagram{
+	background: #125688;
+	/*background: #549BDE;*/
+}
+
