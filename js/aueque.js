@@ -7,6 +7,7 @@ window.onload = function(){
 		aboutNavigationItem = document.getElementById("aboutNavItem");
 
 	//Apply the click listeners
+	iconNavigationBar.setAttribute('class',"icon-bar five-up icon-bar-twitter");
 	homeNavigationItem.addEventListener("click",homeIconClicked,false);
 	twitterNavigationItem.addEventListener("click",twitterIconClicked,false);
 	instagramNavigationItem.addEventListener("click",instagramIconClicked,false);
