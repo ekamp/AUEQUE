@@ -1,4 +1,5 @@
-//Bind the objects
+window.onload = function(){
+	//Bind the objects
 var iconNavigationBar = document.getElementById("iconNavigationBar"),
 	homeNavigationItem = document.getElementById("homeNavItem"),
 	twitterNavigationItem = document.getElementById("twitterNavItem"),
@@ -9,10 +10,12 @@ var iconNavigationBar = document.getElementById("iconNavigationBar"),
 homeNavigationItem.addEventListener("click",homeIconClicked,false);
 twitterNavigationItem.addEventListener("click",twitterIconClicked,false);
 instagramNavigationItem.addEventListener("click",instagramIconClicked,false);
-aboutNavigationItem.addEventListener("click",aboutIconClicked,false);
+aboutNavigationItem.addEventListener("click",aboutIconClicked,false);	
+}
 
 //Create the click functions
 function homeIconClicked(){
+	alert("clicking home icon");
 	document.getElementById("iconNavigationBar").className = "icon-bar four-up icon-bar-blog-about";
 }
 
