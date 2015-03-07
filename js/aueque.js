@@ -31,31 +31,29 @@ function homeIconClicked(){
 	clearItemNavigationFormatting();
 	iconNavigationBar.className = "icon-bar four-up icon-bar-blog-about";
 	homeNavigationItem.className = "item active";
+	requestAndShowHomeContent();
 }
 
 function twitterIconClicked(){
 	clearItemNavigationFormatting();
 	iconNavigationBar.className = "icon-bar four-up icon-bar-twitter";
 	twitterNavigationItem.className = "item active";
-
-	homeDiv.className = "hidden";
-	twitterDiv.className="visible";
-	instagramDiv.className = "hidden";
-	aboutDiv.className = "hidden";
-	
-	fetchTweets();
+	requestAndShowTwitterContent();
 }
 
 function instagramIconClicked(){
 	clearItemNavigationFormatting();
 	iconNavigationBar.className = "icon-bar four-up icon-bar-instagram";
 	instagramNavigationItem.className = "item active";
+	requestAndShowInstagramContent();
 }
 
 function aboutIconClicked(){
 	clearItemNavigationFormatting();
 	iconNavigationBar.className = "icon-bar four-up icon-bar-blog-about";
 	aboutNavigationItem.className = "item active";
+	requestAndShowAboutContent();
+
 }
 
 function clearItemNavigationFormatting(){
@@ -64,3 +62,40 @@ function clearItemNavigationFormatting(){
 	instagramNavigationItem.className = "item";
 	aboutNavigationItem.className = "item";
 }
+
+function requestAndShowHomeContent(){
+	homeDiv.className = "visible";
+	twitterDiv.className="hidden";
+	instagramDiv.className = "hidden";
+	aboutDiv.className = "hidden";
+
+	fetchTweets();
+}
+
+function requestAndShowTwitterContent(){
+	homeDiv.className = "hidden";
+	twitterDiv.className="visible";
+	instagramDiv.className = "hidden";
+	aboutDiv.className = "hidden";
+
+	fetchTweets();
+}
+
+function requestAndShowInstagramContent(){
+	homeDiv.className = "hidden";
+	twitterDiv.className="hidden";
+	instagramDiv.className = "visible";
+	aboutDiv.className = "hidden";
+	
+	fetchInstagramPosts();
+}
+
+function requestAndShowAboutContent(){
+	homeDiv.className = "hidden";
+	twitterDiv.className="hidden";
+	instagramDiv.className = "hidden";
+	aboutDiv.className = "visible";
+	
+	fetchTumblrPosts();
+}
+
