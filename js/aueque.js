@@ -1,8 +1,8 @@
 //Iconbar navigation items
-var iconNavigationBar, homeNavigationItem ,twitterNavigationItem ,instagramNavigationItem ,aboutNavigationItem;
+var iconNavigationBar, homeNavigationItem ,twitterNavigationItem ,instagramNavigationItem ,aboutNavigationItem, snapChatNavigationItem;
 
 //Div content
-var homeDiv, twitterDiv, instagramDiv, aboutDiv;
+var homeDiv, twitterDiv, instagramDiv, aboutDiv, snapChatDiv;
 
 window.onload = function(){
 	//Bind the iconbar objects
@@ -11,18 +11,21 @@ window.onload = function(){
 	twitterNavigationItem = document.getElementById("twitterNavItem");
 	instagramNavigationItem = document.getElementById("instagramNavItem");
 	aboutNavigationItem = document.getElementById("aboutNavItem");
+	snapChatNavigationItem = document.getElementById("snapChatNavItem");
 
 	//Apply the click listeners
 	homeNavigationItem.addEventListener("click",homeIconClicked,false);
 	twitterNavigationItem.addEventListener("click",twitterIconClicked,false);
 	instagramNavigationItem.addEventListener("click",instagramIconClicked,false);
 	aboutNavigationItem.addEventListener("click",aboutIconClicked,false);
+	snapChatNavigationItem.addEventListener("click",aboutIconClicked,false);
 
 	//Bind the div content
 	homeDiv =  document.getElementById("home");
 	twitterDiv = document.getElementById("tweetList");
 	instagramDiv = document.getElementById("instafeed");
 	aboutDiv = document.getElementById("tumblrFeed");
+	snapChatDiv = document.getElementById("snapChatFeed");
 }
 
 /** OnClick functions **/
@@ -53,7 +56,14 @@ function aboutIconClicked(){
 	iconNavigationBar.className = "icon-bar four-up icon-bar-blog-about";
 	aboutNavigationItem.className = "item active";
 	requestAndShowAboutContent();
+}
 
+function snapChatIconClicked(){
+	clearItemNavigationFormatting();
+	iconNavigationBar.className = "icon-bar five-up icon-bar-snapChat";
+	snapChatNavigationItem.className = "item active";
+	// snapChatThemeNavigationItems();
+	//Request and show snapchat stories
 }
 
 function clearItemNavigationFormatting(){
@@ -98,4 +108,8 @@ function requestAndShowAboutContent(){
 	
 	fetchTumblrPosts();
 }
+
+
+
+
 
