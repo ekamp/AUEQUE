@@ -2812,14 +2812,14 @@ meta.foundation-mq-topbar {
   .toolbar .tab-content label {
     color: #CCCCCC; }
   .toolbar .tab-content i {
-    font-size: 30px;
+    font-size: 150px;
     display: block;
     margin: 0 auto;
     color: #CCCCCC;
     vertical-align: middle; }
   .toolbar .tab-content img {
-    width: 150px;
-    height: 150px;
+    width: 30px;
+    height: 30px;
     display: block;
     margin: 0 auto; }
 
