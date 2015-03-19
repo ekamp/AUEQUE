@@ -3134,9 +3134,9 @@ meta.foundation-mq-topbar {
     .icon-bar > * i {
       font-size: 1.875rem;
       vertical-align: middle; }
-    .icon-bar > * img {
+    /*.icon-bar > * img {
       width: 1.875rem;
-      height: 1.875rem; }
+      height: 1.875rem; }*/
   .icon-bar.label-right > * i, .icon-bar.label-right > * img {
     margin: 0 .0625rem 0 0;
     display: inline-block; }
