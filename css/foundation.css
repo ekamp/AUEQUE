@@ -3135,8 +3135,8 @@ meta.foundation-mq-topbar {
       font-size: 1.875rem;
       vertical-align: middle; }
     .icon-bar > * img {
-      width: 9.375rem;
-      height: 9.375rem; }
+      width: 150px;
+      height: 150px; }
   .icon-bar.label-right > * i, .icon-bar.label-right > * img {
     margin: 0 .0625rem 0 0;
     display: inline-block; }
@@ -3177,8 +3177,8 @@ meta.foundation-mq-topbar {
     .icon-bar > * i {
       font-size: 1.875rem; }
     .icon-bar > * img {
-      width: 9.375rem;
-      height: 9.375rem; }
+      width: 150px;
+      height: 150px; }
   .icon-bar > * label {
     color: #FFFFFF; }
   .icon-bar > * i {
