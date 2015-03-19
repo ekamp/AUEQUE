@@ -29,7 +29,7 @@ window.onload = function(){
 }
 
 /** OnClick functions **/
-
+	
 function homeIconClicked(){
 	clearItemNavigationFormatting();
 	iconNavigationBar.className = "icon-bar four-up icon-bar-blog-about";
@@ -108,8 +108,3 @@ function requestAndShowAboutContent(){
 	
 	fetchTumblrPosts();
 }
-
-
-
-
-
