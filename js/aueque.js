@@ -1,6 +1,9 @@
 //Iconbar navigation items
 var iconNavigationBar, homeNavigationItem ,twitterNavigationItem ,instagramNavigationItem ,aboutNavigationItem, snapChatNavigationItem;
 
+//Image Icons
+var homeNavigationIcon ,twitterNavigationIcon ,instagramNavigationIcon ,aboutNavigationIcon, snapChatNavigationIcon;
+
 //Div content
 var homeDiv, twitterDiv, instagramDiv, aboutDiv, snapChatDiv;
 
@@ -18,7 +21,7 @@ window.onload = function(){
 	twitterNavigationItem.addEventListener("click",twitterIconClicked,false);
 	instagramNavigationItem.addEventListener("click",instagramIconClicked,false);
 	aboutNavigationItem.addEventListener("click",aboutIconClicked,false);
-	snapChatNavigationItem.addEventListener("click",aboutIconClicked,false);
+	snapChatNavigationItem.addEventListener("click",snapChatIconClicked,false);
 
 	//Bind the div content
 	homeDiv =  document.getElementById("home");
@@ -26,35 +29,46 @@ window.onload = function(){
 	instagramDiv = document.getElementById("instafeed");
 	aboutDiv = document.getElementById("tumblrFeed");
 	snapChatDiv = document.getElementById("snapChatFeed");
+
+	//Bind the icon images
+	homeNavigationIcon = document.getElementById("homeNavIcon");
+	twitterNavigationIcon = document.getElementById("twitterNavIcon");
+	instagramNavigationIcon = document.getElementById("instagramNavIcon");
+	aboutNavigationIcon = document.getElementById("aboutNavIcon");
+	snapChatNavigationIcon = document.getElementById("snapChatNavIcon");
 }
 
 /** OnClick functions **/
 	
 function homeIconClicked(){
 	clearItemNavigationFormatting();
-	iconNavigationBar.className = "icon-bar four-up icon-bar-blog-about";
+	iconNavigationBar.className = "icon-bar five-up icon-bar-blog-about";
 	homeNavigationItem.className = "item active";
+	homeThemeNavigationItems();
 	requestAndShowHomeContent();
 }
 
 function twitterIconClicked(){
 	clearItemNavigationFormatting();
-	iconNavigationBar.className = "icon-bar four-up icon-bar-twitter";
+	iconNavigationBar.className = "icon-bar five-up icon-bar-twitter";
 	twitterNavigationItem.className = "item active";
+	TwitterThemeNavigationItems();
 	requestAndShowTwitterContent();
 }
 
 function instagramIconClicked(){
 	clearItemNavigationFormatting();
-	iconNavigationBar.className = "icon-bar four-up icon-bar-instagram";
+	iconNavigationBar.className = "icon-bar five-up icon-bar-instagram";
 	instagramNavigationItem.className = "item active";
+	InstagramThemeNavigationItems();
 	requestAndShowInstagramContent();
 }
 
 function aboutIconClicked(){
 	clearItemNavigationFormatting();
-	iconNavigationBar.className = "icon-bar four-up icon-bar-blog-about";
+	iconNavigationBar.className = "icon-bar five-up icon-bar-blog-about";
 	aboutNavigationItem.className = "item active";
+	aboutThemeNavigationItems();
 	requestAndShowAboutContent();
 }
 
@@ -62,7 +76,7 @@ function snapChatIconClicked(){
 	clearItemNavigationFormatting();
 	iconNavigationBar.className = "icon-bar five-up icon-bar-snapChat";
 	snapChatNavigationItem.className = "item active";
-	// snapChatThemeNavigationItems();
+	snapChatThemeNavigationItems();
 	//Request and show snapchat stories
 }
 
@@ -72,6 +86,8 @@ function clearItemNavigationFormatting(){
 	instagramNavigationItem.className = "item";
 	aboutNavigationItem.className = "item";
 }
+
+/** Content requests **/
 
 function requestAndShowHomeContent(){
 	homeDiv.className = "visible";
@@ -108,3 +124,48 @@ function requestAndShowAboutContent(){
 	
 	fetchTumblrPosts();
 }
+
+/** Icon theming **/
+
+function snapChatThemeNavigationItems(){
+	aboutNavigationIcon.src = "img/snap-about.png";
+	homeNavigationIcon.src = "img/snap-home.png";
+	instagramNavigationIcon.src = "img/snap-ig.png";
+	snapChatNavigationIcon.src = "img/snap-snap.png";
+	twitterNavigationIcon.src = "img/snap-tweet.png";
+}
+
+function aboutThemeNavigationItems(){
+	aboutNavigationIcon.src = "img/about-about.png";
+	homeNavigationIcon.src = "img/about-home.png";
+	instagramNavigationIcon.src = "img/about-ig.png";
+	snapChatNavigationIcon.src = "img/about-snap.png";
+	twitterNavigationIcon.src = "img/about-tweet.png";
+}
+
+function homeThemeNavigationItems(){
+	aboutNavigationIcon.src = "img/home-about.png";
+	homeNavigationIcon.src = "img/home-home.png";
+	instagramNavigationIcon.src = "img/home-ig.png";
+	snapChatNavigationIcon.src = "img/home-snap.png";
+	twitterNavigationIcon.src = "img/home-tweet.png";
+}
+
+function InstagramThemeNavigationItems(){
+	aboutNavigationIcon.src = "img/ig-about.png";
+	homeNavigationIcon.src = "img/ig-home.png";
+	instagramNavigationIcon.src = "img/ig-ig.png";
+	snapChatNavigationIcon.src = "img/ig-snap.png";
+	twitterNavigationIcon.src = "img/ig-tweet.png";
+}
+
+function TwitterThemeNavigationItems(){
+	aboutNavigationIcon.src = "img/tweet-about.png";
+	homeNavigationIcon.src = "img/tweet-home.png";
+	instagramNavigationIcon.src = "img/tweet-ig.png";
+	snapChatNavigationIcon.src = "img/tweet-snap.png";
+	twitterNavigationIcon.src = "img/tweet-tweet.png";
+}
+
+
+
