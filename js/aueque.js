@@ -77,7 +77,7 @@ function snapChatIconClicked(){
 	iconNavigationBar.className = "icon-bar five-up icon-bar-snapChat";
 	snapChatNavigationItem.className = "item active";
 	snapChatThemeNavigationItems();
-	//Request and show snapchat stories
+	requestAndShowSnapChatContent();
 }
 
 function clearItemNavigationFormatting(){
@@ -85,6 +85,7 @@ function clearItemNavigationFormatting(){
 	twitterNavigationItem.className = "item";
 	instagramNavigationItem.className = "item";
 	aboutNavigationItem.className = "item";
+	snapChatNavigationItem.className = "item";
 }
 
 /** Content requests **/
@@ -94,6 +95,7 @@ function requestAndShowHomeContent(){
 	twitterDiv.className="hidden";
 	instagramDiv.className = "hidden";
 	aboutDiv.className = "hidden";
+	snapChatDiv.className = "hidden"
 
 	fetchTweets();
 }
@@ -103,6 +105,7 @@ function requestAndShowTwitterContent(){
 	twitterDiv.className="visible";
 	instagramDiv.className = "hidden";
 	aboutDiv.className = "hidden";
+	snapChatDiv.className = "hidden"
 
 	fetchTweets();
 }
@@ -112,6 +115,7 @@ function requestAndShowInstagramContent(){
 	twitterDiv.className="hidden";
 	instagramDiv.className = "visible";
 	aboutDiv.className = "hidden";
+	snapChatDiv.className = "hidden"
 	
 	fetchInstagramPosts();
 }
@@ -121,8 +125,17 @@ function requestAndShowAboutContent(){
 	twitterDiv.className="hidden";
 	instagramDiv.className = "hidden";
 	aboutDiv.className = "visible";
+	snapChatDiv.className = "hidden"
 	
 	fetchTumblrPosts();
+}
+
+function requestAndShowSnapChatContent(){
+	homeDiv.className = "hidden";
+	twitterDiv.className="hidden";
+	instagramDiv.className = "hidden";
+	aboutDiv.className = "hidden";
+	snapChatDiv.className = "visible"
 }
 
 /** Icon theming **/
