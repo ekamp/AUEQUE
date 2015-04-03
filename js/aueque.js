@@ -55,7 +55,7 @@ function twitterIconClicked(){
 	TwitterThemeNavigationItems();
 
 	//If the twitter dive has no content then request the content and populate the feilds
-	if (!twitterDiv.hasChildNodes()) {
+	if (!twitterDiv.childNodes.length > 1) {
     	requestAndShowTwitterContent();
 	}
 }
@@ -65,10 +65,9 @@ function instagramIconClicked(){
 	iconNavigationBar.className = "icon-bar five-up icon-bar-instagram";
 	instagramNavigationItem.className = "item active";
 	InstagramThemeNavigationItems();
-	if (!instagramDiv.hasChildNodes()) {
+	if (!instagramDiv.childNodes.length > 1)) {
     	requestAndShowInstagramContent();
 	}
-	
 }
 
 function aboutIconClicked(){
