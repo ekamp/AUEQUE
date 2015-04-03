@@ -105,7 +105,7 @@ function requestAndShowTwitterContent(){
 	instagramDiv.className = "hidden";
 	aboutDiv.className = "hidden";
 	snapChatDiv.className = "hidden"
-	if(twitterDiv.childNodes.length < 2){
+	if(twitterDiv.childNodes.length < 4){
 		fetchTweets();
 	}	
 }
@@ -117,7 +117,7 @@ function requestAndShowInstagramContent(){
 	aboutDiv.className = "hidden";
 	snapChatDiv.className = "hidden"
 	console.log("Child Nodes " + instagramDiv.childNodes.length);
-	if(instagramDiv.childNodes.length < 2){
+	if(instagramDiv.childNodes.length < 4){
 		fetchInstagramPosts();	
 	}
 }
@@ -128,7 +128,7 @@ function requestAndShowAboutContent(){
 	instagramDiv.className = "hidden";
 	aboutDiv.className = "visible";
 	snapChatDiv.className = "hidden"
-	if(aboutDiv.childNodes.length < 2){
+	if(aboutDiv.childNodes.length < 4){
 		fetchTumblrPosts();	
 	}
 }
