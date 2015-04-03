@@ -53,7 +53,11 @@ function twitterIconClicked(){
 	iconNavigationBar.className = "icon-bar five-up icon-bar-twitter";
 	twitterNavigationItem.className = "item active";
 	TwitterThemeNavigationItems();
-	requestAndShowTwitterContent();
+
+	//If the twitter dive has no content then request the content and populate the feilds
+	if (!twitterDiv.hasChildNodes()) {
+    	requestAndShowTwitterContent();
+	}
 }
 
 function instagramIconClicked(){
@@ -61,7 +65,10 @@ function instagramIconClicked(){
 	iconNavigationBar.className = "icon-bar five-up icon-bar-instagram";
 	instagramNavigationItem.className = "item active";
 	InstagramThemeNavigationItems();
-	requestAndShowInstagramContent();
+	if (!instagramDiv.hasChildNodes()) {
+    	requestAndShowInstagramContent();
+	}
+	
 }
 
 function aboutIconClicked(){
@@ -96,7 +103,6 @@ function requestAndShowHomeContent(){
 	instagramDiv.className = "hidden";
 	aboutDiv.className = "hidden";
 	snapChatDiv.className = "hidden"
-
 	fetchTweets();
 }
 
@@ -106,7 +112,6 @@ function requestAndShowTwitterContent(){
 	instagramDiv.className = "hidden";
 	aboutDiv.className = "hidden";
 	snapChatDiv.className = "hidden"
-
 	fetchTweets();
 }
 
@@ -116,7 +121,6 @@ function requestAndShowInstagramContent(){
 	instagramDiv.className = "visible";
 	aboutDiv.className = "hidden";
 	snapChatDiv.className = "hidden"
-	
 	fetchInstagramPosts();
 }
 
@@ -126,7 +130,6 @@ function requestAndShowAboutContent(){
 	instagramDiv.className = "hidden";
 	aboutDiv.className = "visible";
 	snapChatDiv.className = "hidden"
-	
 	fetchTumblrPosts();
 }
 
