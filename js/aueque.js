@@ -55,7 +55,7 @@ function twitterIconClicked(){
 	TwitterThemeNavigationItems();
 
 	//If the twitter dive has no content then request the content and populate the feilds
-	if (!twitterDiv.childNodes.length > 1) {
+	if (twitterDiv.childNodes.length < 2) {
     	requestAndShowTwitterContent();
 	}
 }
@@ -65,7 +65,7 @@ function instagramIconClicked(){
 	iconNavigationBar.className = "icon-bar five-up icon-bar-instagram";
 	instagramNavigationItem.className = "item active";
 	InstagramThemeNavigationItems();
-	if (!instagramDiv.childNodes.length > 1)) {
+	if (instagramDiv.childNodes.length < 2)) {
     	requestAndShowInstagramContent();
 	}
 }
