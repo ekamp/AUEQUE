@@ -113,7 +113,7 @@ function requestAndShowTwitterContent(){
 function requestAndShowInstagramContent(){
 	homeDiv.className = "hidden";
 	twitterDiv.className="hidden";
-	instagramDiv.className = "visible";
+	instagramDiv.className = "visible center-block";
 	aboutDiv.className = "hidden";
 	snapChatDiv.className = "hidden"
 	console.log("Child Nodes " + instagramDiv.childNodes.length);
