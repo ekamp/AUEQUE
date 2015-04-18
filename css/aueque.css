@@ -116,14 +116,9 @@
  Instagram styling
 **/
 
-.instagram img{
+.instagram{
   margin: 10px; 
   padding:3px;
-  background-color: #E3F2FD;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
 }
-
-.instagramContainer {
-  width: 25%;
-}
-
-
