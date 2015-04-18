@@ -32,7 +32,7 @@ window.onload = function(){
 	//Bind the div content
 	homeDiv =  document.getElementById("home");
 	twitterDiv = document.getElementById("tweetList");
-	instagramDiv = document.getElementById("instafeed");
+	instagramDiv = document.getElementById("instagramContent");
 	aboutDiv = document.getElementById("tumblrFeed");
 	snapChatDiv = document.getElementById("snapChatFeed");
 
