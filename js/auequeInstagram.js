@@ -8,3 +8,13 @@ function fetchInstagramPosts(){
 	});
 	feed.run();	
 }
+
+function getInstagramUserInformation (){
+	var client_id = "ee2c8fb2d5c24eab9054652cd7794526";
+	var user_id = "227012267";
+	var url = "https://api.instagram.com/v1/users/"+user_id+"?client_id="+client_id+"&callback=?";
+	
+	$.getJSON(url, function(data) {
+	     return data.data;
+	});
+}

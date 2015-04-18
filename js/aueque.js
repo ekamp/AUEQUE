@@ -7,6 +7,12 @@ var homeNavigationIcon ,twitterNavigationIcon ,instagramNavigationIcon ,aboutNav
 //Div content
 var homeDiv, twitterDiv, instagramDiv, aboutDiv, snapChatDiv;
 
+//Data content
+var userInstagramData;
+
+//User Information web items
+var instagramUserName, instagramUserFollowers, instagramUserFollowing, instagramUserPosts;
+
 window.onload = function(){
 	//Bind the iconbar objects
 	iconNavigationBar = document.getElementById("iconNavigationBar");
@@ -36,6 +42,12 @@ window.onload = function(){
 	instagramNavigationIcon = document.getElementById("instagramNavIcon");
 	aboutNavigationIcon = document.getElementById("aboutNavIcon");
 	snapChatNavigationIcon = document.getElementById("snapChatNavIcon");
+
+	//Bind User Information Constants
+	instagramUserName = document.getElementById("instagramUserName");
+	instagramUserFollowers = document.getElementById("instagramUserFollowers");
+	instagramUserFollowing = document.getElementById("instagramUserFollowing");
+	instagramUserPosts = document.getElementById("instagramUserPosts");
 }
 
 /** OnClick functions **/
@@ -118,7 +130,9 @@ function requestAndShowInstagramContent(){
 	snapChatDiv.className = "hidden"
 	console.log("Child Nodes " + instagramDiv.childNodes.length);
 	if(instagramDiv.childNodes.length < 4){
-		fetchInstagramPosts();	
+		fetchInstagramPosts();
+		userInstagramData = getInstagramUserInformation();
+		populateInstagramUserInformation();
 	}
 }
 
@@ -191,4 +205,16 @@ function OpenUrlInMobileOrWebpage(urlToOpen,mobileID){
 		window.location = urlToOpen;
 	}
 }
+
+function populateInstagramUserInformation(){
+	if(userInstagramData){
+		instagramUserName.innerHTML = userInstagramData.full_name;
+		instagramUserFollowers.innerHTML = userInstagramData.counts.followed_by;
+	}
+}
+ 
+
+
+
+
 
