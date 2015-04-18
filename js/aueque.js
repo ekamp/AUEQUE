@@ -131,12 +131,7 @@ function requestAndShowInstagramContent(){
 	console.log("Child Nodes " + instagramDiv.childNodes.length);
 	if(instagramDiv.childNodes.length < 4){
 		fetchInstagramPosts();
-		userInstagramData = getInstagramUserInformation();
-		console.log(userInstagramData);
-		console.log(userInstagramData.full_name);
-		console.log(userInstagramData.counts.followed_by);
-		console.log(userInstagramData.counts.media);
-		console.log(userInstagramData.counts.follows);
+		getInstagramUserInformation();
 	}
 }
 
