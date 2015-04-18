@@ -193,7 +193,7 @@ function OpenUrlInMobileOrWebpage(urlToOpen,mobileID){
 		}
 	}
 	else{
-		console.log("Attempting to set the window location to " + url);
+		console.log("Attempting to set the window location to " + urlToOpen);
 		window.location = urlToOpen;
 	}
 }
