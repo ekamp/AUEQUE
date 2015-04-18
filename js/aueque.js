@@ -7,9 +7,6 @@ var homeNavigationIcon ,twitterNavigationIcon ,instagramNavigationIcon ,aboutNav
 //Div content
 var homeDiv, twitterDiv, instagramDiv, aboutDiv, snapChatDiv;
 
-//Data content
-var userInstagramData;
-
 //User Information web items
 var instagramUserName, instagramUserFollowers, instagramUserFollowing, instagramUserPosts;
 
@@ -205,7 +202,7 @@ function OpenUrlInMobileOrWebpage(urlToOpen,mobileID){
 	}
 }
 
-function populateInstagramUserInformation(){
+function populateInstagramUserInformation(userInstagramData){
 	if(userInstagramData){
 		instagramUserName.innerHTML = userInstagramData.full_name;
 		instagramUserFollowers.innerHTML = userInstagramData.counts.followed_by;

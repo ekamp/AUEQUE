@@ -15,10 +15,12 @@ function getInstagramUserInformation (){
 	var url = "https://api.instagram.com/v1/users/"+user_id+"?client_id="+client_id+"&callback=?";
 	
 	$.getJSON(url, function(data) {
+		var userInstagramData = data.data;
 	    console.log(userInstagramData);
 		console.log(userInstagramData.full_name);
 		console.log(userInstagramData.counts.followed_by);
 		console.log(userInstagramData.counts.media);
 		console.log(userInstagramData.counts.follows);
+		populateInstagramUserInformation(userInstagramData);
 	});
 }
