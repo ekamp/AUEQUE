@@ -32,7 +32,7 @@ window.onload = function(){
 	//Bind the div content
 	homeDiv =  document.getElementById("home");
 	twitterDiv = document.getElementById("tweetList");
-	instagramDiv = document.getElementById("instagramContent");
+	instagramDiv = document.getElementById("instafeed");
 	aboutDiv = document.getElementById("tumblrFeed");
 	snapChatDiv = document.getElementById("snapChatFeed");
 
@@ -132,7 +132,11 @@ function requestAndShowInstagramContent(){
 	if(instagramDiv.childNodes.length < 4){
 		fetchInstagramPosts();
 		userInstagramData = getInstagramUserInformation();
-		populateInstagramUserInformation();
+		console.log(userInstagramData);
+		console.log(userInstagramData.full_name);
+		console.log(userInstagramData.counts.followed_by);
+		console.log(userInstagramData.counts.media);
+		console.log(userInstagramData.counts.follows);
 	}
 }
 
