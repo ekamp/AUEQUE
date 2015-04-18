@@ -41,10 +41,10 @@ window.onload = function(){
 	snapChatNavigationIcon = document.getElementById("snapChatNavIcon");
 
 	//Bind User Information Constants
-	// instagramUserName = document.getElementById("instagramUserName");
-	// instagramUserFollowers = document.getElementById("instagramUserFollowers");
-	// instagramUserFollowing = document.getElementById("instagramUserFollowing");
-	// instagramUserPosts = document.getElementById("instagramUserPosts");
+	instagramUserName = document.getElementById("instagramUserName");
+	instagramUserFollowers = document.getElementById("instagramUserFollowers");
+	instagramUserFollowing = document.getElementById("instagramUserFollowing");
+	instagramUserPosts = document.getElementById("instagramUserPosts");
 	instagramProfilePicture = document.getElementById("instagramProfilePicture");
 }
 
@@ -205,10 +205,10 @@ function OpenUrlInMobileOrWebpage(urlToOpen,mobileID){
 
 function populateInstagramUserInformation(userInstagramData){
 	if(userInstagramData){
-		// instagramUserName.innerHTML = userInstagramData.full_name;
-		// instagramUserFollowers.innerHTML = userInstagramData.counts.followed_by;
-		// instagramUserFollowing.innerHTML = userInstagramData.counts.follows;
-		// instagramUserPosts.innerHTML = userInstagramData.counts.media;
+		instagramUserName.innerHTML = userInstagramData.full_name;
+		instagramUserFollowers.innerHTML = userInstagramData.counts.followed_by;
+		instagramUserFollowing.innerHTML = userInstagramData.counts.follows;
+		instagramUserPosts.innerHTML = userInstagramData.counts.media;
 		instagramProfilePicture.src = userInstagramData.profile_picture;
 	}
 }
