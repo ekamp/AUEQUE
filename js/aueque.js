@@ -188,6 +188,8 @@ function OpenUrlInMobileOrWebpage(urlToOpen,mobileID){
 		if (window.navigator.standalone == true) {
 			window.location = "instagram://".concat(mobileID);
 			console.log("Opening as iphone " + mobileID);
+		}else {
+			console.log("Something is wrong");
 		}
 	}
 	else{
