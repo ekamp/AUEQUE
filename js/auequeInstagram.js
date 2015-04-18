@@ -16,11 +16,6 @@ function getInstagramUserInformation (){
 	
 	$.getJSON(url, function(data) {
 		var userInstagramData = data.data;
-	    console.log(userInstagramData);
-		console.log(userInstagramData.full_name);
-		console.log(userInstagramData.counts.followed_by);
-		console.log(userInstagramData.counts.media);
-		console.log(userInstagramData.counts.follows);
 		populateInstagramUserInformation(userInstagramData);
 	});
 }

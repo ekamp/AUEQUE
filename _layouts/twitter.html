@@ -2,6 +2,8 @@
 <link href="css/foundation.css" rel="stylesheet" type="text/css" />
 <link href="css/aueque.css" rel="stylesheet" type="text/css" />
 <link href="css/foundation-icons.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
 
 <body>
 	{% include navbar.html %}
@@ -13,17 +15,13 @@
 	<h2>Twitter</h2>
 </div>
 <div id="instagramContent">
-<div class="row">
-	<h3 id="instagramUserName"></h3>
-</div>
-<div class="row">
-	<h4 id="instagramUserFollowers"></h4>
-	<h4 id="instagramUserFollowing"></h4>
-	<h4 id="instagramUserPosts"></h4>
-	<img id="instagramProfilePicture"></img>
-</div>
-	<div id="instafeed" class="hidden">
+	<div class="row">
+		<h4 id="instagramUserFollowers"></h4>
+		<h4 id="instagramUserFollowing"></h4>
+		<h4 id="instagramUserPosts"></h4>
+		<img class="img-circle" id="instagramProfilePicture"></img>
 	</div>
+	<div id="instafeed" class="hidden"></div>
 </div>
 
 <div id="tumblrFeed" class="hidden">
