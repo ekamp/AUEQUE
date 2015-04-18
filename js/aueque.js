@@ -206,6 +206,8 @@ function populateInstagramUserInformation(userInstagramData){
 	if(userInstagramData){
 		instagramUserName.innerHTML = userInstagramData.full_name;
 		instagramUserFollowers.innerHTML = userInstagramData.counts.followed_by;
+		instagramUserFollwing.innerHTML = userInstagramData.counts.follows;
+		instagramUserPosts.innerHTML = userInstagramData.counts.media;
 	}
 }
  
