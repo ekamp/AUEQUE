@@ -185,15 +185,9 @@ function TwitterThemeNavigationItems(){
 
 function OpenUrlInMobileOrWebpage(urlToOpen,mobileID){
 	if (window.navigator.userAgent.indexOf('iPhone') != -1) {
-		if (window.navigator.standalone == true) {
-			window.location = "instagram://".concat(mobileID);
-			console.log("Opening as iphone " + mobileID);
-		}else {
-			console.log("Something is wrong");
-		}
+		window.location = "instagram://media?id=".concat(mobileID);
 	}
 	else{
-		console.log("Attempting to set the window location to " + urlToOpen);
 		window.location = urlToOpen;
 	}
 }
