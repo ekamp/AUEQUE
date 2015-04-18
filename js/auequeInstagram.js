@@ -15,6 +15,8 @@ function getInstagramUserInformation (){
 	var url = "https://api.instagram.com/v1/users/"+user_id+"?client_id="+client_id+"&callback=?";
 	
 	$.getJSON(url, function(data) {
+		 console.log(data.data);
+		 console.log(data.data.full_name);
 	     return data.data;
 	});
 }

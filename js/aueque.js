@@ -133,10 +133,10 @@ function requestAndShowInstagramContent(){
 		fetchInstagramPosts();
 		userInstagramData = getInstagramUserInformation();
 		console.log(userInstagramData);
-		console.log(userInstagramData.full_name);
-		console.log(userInstagramData.counts.followed_by);
-		console.log(userInstagramData.counts.media);
-		console.log(userInstagramData.counts.follows);
+		// console.log(userInstagramData.full_name);
+		// console.log(userInstagramData.counts.followed_by);
+		// console.log(userInstagramData.counts.media);
+		// console.log(userInstagramData.counts.follows);
 	}
 }
 
