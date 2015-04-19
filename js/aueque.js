@@ -5,7 +5,7 @@ var iconNavigationBar, homeNavigationItem ,twitterNavigationItem ,instagramNavig
 var homeNavigationIcon ,twitterNavigationIcon ,instagramNavigationIcon ,aboutNavigationIcon, snapChatNavigationIcon;
 
 //Div content
-var homeDiv, twitterDiv, instagramDiv, aboutDiv, snapChatDiv;
+var homeDiv, twitterDiv, instagramDiv, aboutDiv, snapChatDiv, instagramContentDiv;
 
 //User Information web items
 var instagramUserName, instagramUserFollowers, instagramUserFollowing, instagramUserPosts, instagramProfilePicture;
@@ -32,6 +32,7 @@ window.onload = function(){
 	instagramDiv = document.getElementById("instafeed");
 	aboutDiv = document.getElementById("tumblrFeed");
 	snapChatDiv = document.getElementById("snapChatFeed");
+	instagramContentDiv = document.getElementById("instagramContent");
 
 	//Bind the icon images
 	homeNavigationIcon = document.getElementById("homeNavIcon");
@@ -103,16 +104,15 @@ function clearItemNavigationFormatting(){
 function requestAndShowHomeContent(){
 	homeDiv.className = "visible";
 	twitterDiv.className="hidden";
-	instagramDiv.className = "hidden";
+	instagramContentDiv.className = "hidden";
 	aboutDiv.className = "hidden";
 	snapChatDiv.className = "hidden"
-	// fetchTweets();
 }
 
 function requestAndShowTwitterContent(){
 	homeDiv.className = "hidden";
 	twitterDiv.className="visible";
-	instagramDiv.className = "hidden";
+	instagramContentDiv.className = "hidden";
 	aboutDiv.className = "hidden";
 	snapChatDiv.className = "hidden"
 	if(twitterDiv.childNodes.length < 4){
@@ -123,7 +123,7 @@ function requestAndShowTwitterContent(){
 function requestAndShowInstagramContent(){
 	homeDiv.className = "hidden";
 	twitterDiv.className="hidden";
-	instagramDiv.className = "visible";
+	instagramContentDiv.className = "visible";
 	aboutDiv.className = "hidden";
 	snapChatDiv.className = "hidden"
 	console.log("Child Nodes " + instagramDiv.childNodes.length);
@@ -136,7 +136,7 @@ function requestAndShowInstagramContent(){
 function requestAndShowAboutContent(){
 	homeDiv.className = "hidden";
 	twitterDiv.className="hidden";
-	instagramDiv.className = "hidden";
+	instagramContentDiv.className = "hidden";
 	aboutDiv.className = "visible";
 	snapChatDiv.className = "hidden"
 	if(aboutDiv.childNodes.length < 4){
@@ -147,7 +147,7 @@ function requestAndShowAboutContent(){
 function requestAndShowSnapChatContent(){
 	homeDiv.className = "hidden";
 	twitterDiv.className="hidden";
-	instagramDiv.className = "hidden";
+	instagramContentDiv.className = "hidden";
 	aboutDiv.className = "hidden";
 	snapChatDiv.className = "visible"
 }
@@ -205,7 +205,7 @@ function OpenUrlInMobileOrWebpage(urlToOpen,mobileID){
 
 function populateInstagramUserInformation(userInstagramData){
 	if(userInstagramData){
-		// instagramUserName.innerHTML = userInstagramData.full_name;
+		instagramUserName.innerHTML = userInstagramData.full_name;
 		instagramUserFollowers.innerHTML = userInstagramData.counts.followed_by;
 		instagramUserFollowing.innerHTML = userInstagramData.counts.follows;
 		instagramUserPosts.innerHTML = userInstagramData.counts.media;
