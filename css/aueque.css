@@ -130,7 +130,8 @@
 
 .instagramProfilePictureFormatting{
   width: 306px;
-  height: 306px;
+  height:156px;
+  border-radius:50%;
 }
 
 .instagramUserInformationTextFormatting{
