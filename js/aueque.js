@@ -8,7 +8,7 @@ var homeNavigationIcon ,twitterNavigationIcon ,instagramNavigationIcon ,aboutNav
 var homeDiv, twitterDiv, instagramDiv, aboutDiv, snapChatDiv, instagramContentDiv;
 
 //User Information web items
-var instagramUserName, instagramUserFollowers, instagramUserFollowing, instagramUserPosts, instagramProfilePicture;
+var instagramUserName, instagramUserFollowers, instagramUserFollowing, instagramUserPosts, instagramProfilePicture, instagramUserDescription;
 
 window.onload = function(){
 	//Bind the iconbar objects
@@ -47,6 +47,7 @@ window.onload = function(){
 	instagramUserFollowing = document.getElementById("instagramUserFollowing");
 	instagramUserPosts = document.getElementById("instagramUserPosts");
 	instagramProfilePicture = document.getElementById("instagramProfilePicture");
+	instagramUserDescription = document.getElementById("instagramUserDescription");
 }
 
 /** OnClick functions **/
@@ -210,6 +211,7 @@ function populateInstagramUserInformation(userInstagramData){
 		instagramUserFollowing.innerHTML = userInstagramData.counts.follows;
 		instagramUserPosts.innerHTML = userInstagramData.counts.media;
 		instagramProfilePicture.src = userInstagramData.profile_picture;
+		instagramUserDescription.innerHTML = userInstagramData.bio;
 	}
 }
 
