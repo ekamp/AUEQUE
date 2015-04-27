@@ -139,9 +139,21 @@
   border-radius:50%;
 }
 
-.instagramUserInformationTextFormatting{
-  color: #BABABB;
+.instagramUserSpecsFormatting{
+  font-family: Arial;
+  color: #A5A7AA;
   margin: -15px;
+}
+
+.instagramUserSpecsHeadingFormatting{
+  font-family: Arial;
+  color: #000000;
+  margin: -15px; 
+}
+
+.instagramUserInformationFormatting{
+  font-family: Arial;
+  color:#555555;
 }
 
 .instagramPhotoFormatting{
