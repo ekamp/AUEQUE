@@ -145,10 +145,14 @@
   margin: -15px;
 }
 
+.instagramUserSpecsDivFormatting{
+  margin-top: 40px; 
+}
+
 .instagramUserSpecsHeadingFormatting{
   font-family: Arial;
   color: #000000;
-  margin-top: 40px; 
+  font-size: 3.5em; 
 }
 
 .instagramUserInformationFormatting{
