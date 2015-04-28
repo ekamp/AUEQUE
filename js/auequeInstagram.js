@@ -22,14 +22,14 @@ function getInstagramUserInformation (){
 
 function listenForScrollOnInstagramPage(){
 	$(document).ready(function() {
-	  	$(window).scroll(function () {
-	  		console.log($(window).scrollTop())
-		    if ($(window).scrollTop() > 280) {
-		      $('#iconInstagramNavigation').addClass('icon-bar-sticky-top');
-		    }
-		    if ($(window).scrollTop() < 281) {
-				$('#iconInstagramNavigation').removeClass('icon-bar-sticky-top');
-			}
+	  	$(window).scroll(function(e){ 
+	  		$el = $('#iconInstagramNavigation'); 
+  			if ($(this).scrollTop() > 600 && $el.css('position') != 'fixed'){ 
+    			$el.css({'position': 'fixed', 'top': '0px'}); 
+  			}
+  			if ($(this).scrollTop() < 600 && $el.css('position') == 'fixed'){
+    			$el.css({'position': 'static', 'top': '0px'}); 
+  			} 
 		});
 	});
 }
