@@ -42,6 +42,9 @@
 .icon-bar-snapChat > a:hover {
 	background: #FFFF0A; }
 
+.icon-bar-sticky-top {
+  position: fixed !important;
+}
 /**
  Div properties 
  **/

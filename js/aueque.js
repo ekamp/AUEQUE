@@ -129,6 +129,7 @@ function requestAndShowInstagramContent(){
 	snapChatDiv.className = "hidden"
 	console.log("Child Nodes " + instagramDiv.childNodes.length);
 	if(instagramDiv.childNodes.length < 4){
+		listenForScrollOnInstagramPage();
 		fetchInstagramPosts();
 		getInstagramUserInformation();
 	}

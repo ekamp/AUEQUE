@@ -19,3 +19,17 @@ function getInstagramUserInformation (){
 		populateInstagramUserInformation(userInstagramData);
 	});
 }
+
+function listenForScrollOnInstagramPage(){
+	$(document).ready(function() {
+	  	$(window).scroll(function () {
+	  		console.log($(window).scrollTop())
+		    if ($(window).scrollTop() > 280) {
+		      $('#iconInstagramNavigation').addClass('icon-bar-sticky-top');
+		    }
+		    if ($(window).scrollTop() < 281) {
+				$('#iconInstagramNavigation').removeClass('icon-bar-sticky-top');
+			}
+		});
+	});
+}
