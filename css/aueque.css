@@ -52,6 +52,11 @@
 .icon-bar-instagram-internal{
   background: #FFFFFF !important;
 }
+
+.icon-bar-image-instagram-internal > * img {
+  width: 75px !important;
+  height: 75px !important; 
+}
 /**
  Div properties 
  **/
