@@ -51,6 +51,10 @@
 
 .icon-bar-instagram-internal{
   background: #FFFFFF !important;
+  border-top: 3px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  border-left: 1px solid #E0E0E0;
+  border-right: 1px solid #E0E0E0;
 }
 
 .icon-bar-image-instagram-internal {
@@ -59,8 +63,8 @@
 }
 
 .icon-bar-follow-image-instagram-internal {
-  width: 198px !important;
-  height: 34px !important;
+  width: 329px !important;
+  height: 60px !important;
 }
 /**
  Div properties 

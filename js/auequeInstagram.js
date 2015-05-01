@@ -1,3 +1,50 @@
+
+//Iconbar Instagram navigation items
+var gridInstagramNavItem, feedInstagramNavItem, followInstagramNavItem;
+
+//Iconbar Instagram navigation icons
+var gridInstagramIcon, feedInstagramIcon, followInstagramIcon;
+
+window.onload = function(){
+	//Bind the iconbar objects
+	gridInstagramNavItem = document.getElementById("gridInstagramNavItem");
+	feedInstagramNavItem = document.getElementById("feedInstagramNavItem");
+	followInstagramNavItem = document.getElementById("followInstagramNavItem");
+
+	//Bind the icon images
+	gridInstagramIcon = document.getElementById("gridInstagramIcon");
+	feedInstagramIcon = document.getElementById("feedInstagramIcon");
+	followInstagramIcon = document.getElementById("followInstagramIcon");
+
+	//Apply the click listeners
+	gridInstagramNavItem.addEventListener("click",gridIconClicked,false);
+	feedInstagramNavItem.addEventListener("click",feedIconClicked,false);
+	followInstagramNavItem.addEventListener("click",followIconClicked,false);
+}
+
+/** OnClick functions **/
+
+function gridIconClicked(){
+	clearInstagramIconbarFormatting();
+	gridInstagramIcon.src="img/IG-gridon.png";
+}
+
+function feedIconClicked(){
+	clearInstagramIconbarFormatting();
+	feedInstagramIcon.src="img/IG-feedon.png";
+}
+
+function followIconClicked(){
+	//Determine what to do 
+}
+
+function clearInstagramIconbarFormatting(){
+	gridInstagramIcon.src="img/IG-gridoff.png";
+	feedInstagramIcon.src="img/IG-feedoff.png";
+}
+
+/** Instagram information fetching functions **/
+
 function fetchInstagramPosts(){
 	var feed = new Instafeed({
 		get: 'user',
