@@ -1,26 +1,26 @@
 
-// //Iconbar Instagram navigation items
-// var gridInstagramNavItem, feedInstagramNavItem, followInstagramNavItem;
+//Iconbar Instagram navigation items
+var gridInstagramNavItem, feedInstagramNavItem, followInstagramNavItem;
 
-// //Iconbar Instagram navigation icons
-// var gridInstagramIcon, feedInstagramIcon, followInstagramIcon;
+//Iconbar Instagram navigation icons
+var gridInstagramIcon, feedInstagramIcon, followInstagramIcon;
 
-// window.onload = function(){
-// 	//Bind the iconbar objects
-// 	gridInstagramNavItem = document.getElementById("gridInstagramNavItem");
-// 	feedInstagramNavItem = document.getElementById("feedInstagramNavItem");
-// 	followInstagramNavItem = document.getElementById("followInstagramNavItem");
+function bindInstagramListenersAndElements(){
+	//Bind the iconbar objects
+	gridInstagramNavItem = document.getElementById("gridInstagramNavItem");
+	feedInstagramNavItem = document.getElementById("feedInstagramNavItem");
+	followInstagramNavItem = document.getElementById("followInstagramNavItem");
 
-// 	//Bind the icon images
-// 	gridInstagramIcon = document.getElementById("gridInstagramIcon");
-// 	feedInstagramIcon = document.getElementById("feedInstagramIcon");
-// 	followInstagramIcon = document.getElementById("followInstagramIcon");
+	//Bind the icon images
+	gridInstagramIcon = document.getElementById("gridInstagramIcon");
+	feedInstagramIcon = document.getElementById("feedInstagramIcon");
+	followInstagramIcon = document.getElementById("followInstagramIcon");
 
-// 	//Apply the click listeners
-// 	gridInstagramNavItem.addEventListener("click",gridIconClicked,false);
-// 	feedInstagramNavItem.addEventListener("click",feedIconClicked,false);
-// 	followInstagramNavItem.addEventListener("click",followIconClicked,false);
-// }
+	//Apply the click listeners
+	gridInstagramNavItem.addEventListener("click",gridIconClicked,false);
+	feedInstagramNavItem.addEventListener("click",feedIconClicked,false);
+	followInstagramNavItem.addEventListener("click",followIconClicked,false);
+}
 
 /** OnClick functions **/
 

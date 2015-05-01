@@ -48,6 +48,9 @@ window.onload = function(){
 	instagramUserPosts = document.getElementById("instagramUserPosts");
 	instagramProfilePicture = document.getElementById("instagramProfilePicture");
 	instagramUserDescription = document.getElementById("instagramUserDescription");
+
+	//Once local binding is done bind Instagram so it is loaded before the user clicks the instagram icon
+	bindInstagramListenersAndElements();
 }
 
 /** OnClick functions **/
