@@ -53,9 +53,14 @@
   background: #FFFFFF !important;
 }
 
-.icon-bar-image-instagram-internal > * img {
-  width: 75px !important;
-  height: 75px !important; 
+.icon-bar-image-instagram-internal {
+  width: 56px !important;
+  height: 60px !important; 
+}
+
+.icon-bar-follow-image-instagram-internal {
+  width: 198px !important;
+  height: 34px !important;
 }
 /**
  Div properties 
