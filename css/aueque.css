@@ -66,6 +66,10 @@
   width: 329px !important;
   height: 60px !important;
 }
+
+.icon-bar-instagram-internal-remove-hover > a:hover {
+  background: #FFFFFF !important; 
+}
 /**
  Div properties 
  **/

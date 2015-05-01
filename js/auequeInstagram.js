@@ -80,3 +80,14 @@ function listenForScrollOnInstagramPage(){
 		});
 	});
 }
+
+function populateInstagramUserInformation(userInstagramData){
+	if(userInstagramData){
+		instagramUserName.innerHTML = userInstagramData.full_name;
+		instagramUserFollowers.innerHTML = userInstagramData.counts.followed_by;
+		instagramUserFollowing.innerHTML = userInstagramData.counts.follows;
+		instagramUserPosts.innerHTML = userInstagramData.counts.media;
+		instagramProfilePicture.src = userInstagramData.profile_picture;
+		instagramUserDescription.innerHTML = userInstagramData.bio;
+	}
+}
