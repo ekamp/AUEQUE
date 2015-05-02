@@ -208,7 +208,7 @@
  Home styling
 **/
 
-.homeConstructionImageStyling{
-  opacity: 0.2;
-  margin-top:50px;
+.logoConstructionImageStyling{
+  opacity: 0.2 !important;
+  margin-top:50px !important;
 }
