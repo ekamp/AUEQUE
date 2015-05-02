@@ -212,3 +212,9 @@
   opacity: 0.2 !important;
   margin-top:50px !important;
 }
+
+.fontConstructionFormatting{
+  font-family: Arial;
+  opacity: 0.2 !important;
+  font-size: 3.5em; 
+}
