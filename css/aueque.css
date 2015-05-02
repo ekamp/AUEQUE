@@ -221,6 +221,13 @@
   margin-top:75px;
 }
 
+.fontConstructionFormattingNoMarginTop{
+  font-family: Arial;
+  opacity: 0.5 !important;
+  color:#FFFFFF;
+  font-size: 3.5em; 
+}
+
 .constructionBackgroundFormatting{
   background-color: #8C88A0
 }
