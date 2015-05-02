@@ -203,3 +203,12 @@
     border-radius:20%;
 }
 
+
+/**
+ Home styling
+**/
+
+.homeConstructionImageStyling{
+  opacity: 0.2;
+  margin-top:50px;
+}
