@@ -209,11 +209,13 @@
 **/
 
 .logoConstructionImageStyling{
+  opacity: 0.5 !important;
   margin-top:50px !important;
 }
 
 .fontConstructionFormatting{
   font-family: Arial;
+  opacity: 0.5 !important;
   color:#FFFFFF;
   font-size: 3.5em; 
   margin-top:75px;
