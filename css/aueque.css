@@ -217,4 +217,9 @@
   font-family: Arial;
   opacity: 0.2 !important;
   font-size: 3.5em; 
+  margin-top:75px;
+}
+
+.constructionBackgroundFormatting{
+  background-color: #8C88A0
 }
